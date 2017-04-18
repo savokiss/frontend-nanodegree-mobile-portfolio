@@ -12,7 +12,7 @@ PageSpeed 链接 @ [Google PageSpeed](https://developers.google.com/speed/pagesp
 ### Optimization Overview
 
 #### Part 1: 优化 index.html 达到 pageSpeed 90分以上
-1. 将打印的css 设置 media 为 print
+1. 将打印的 css 设置 media 为 print
 2. 移除 GoogleAnalytics 代码
 3. 根据 pageSpeed 的建议压缩过大的图片
 4. 将 pizzeria.jpg 图片增加缩略图版本以优化在首页显示的是小图的加载速度
