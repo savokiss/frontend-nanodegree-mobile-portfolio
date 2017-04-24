@@ -513,10 +513,15 @@ function updatePositions() {
 window.addEventListener('scroll', updatePositions);
 
 // Generates the sliding pizzas when the page loads.
+// 生成背景pizza算法优化、根据 viewport 动态决定生成个数 :
+// 需要的 pizza 行数 = 窗口高度 / s
+// 实际需要的 pizza 个数 = 需要的 pizza 行数 * 列数(cols)
 document.addEventListener('DOMContentLoaded', function () {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+  var rows = Math.ceil(window.innerHeight / s);
+  var pizzaCount = rows * cols;
+  for (var i = 0; i < pizzaCount; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
