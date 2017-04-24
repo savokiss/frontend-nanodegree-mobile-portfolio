@@ -21,3 +21,6 @@ PageSpeed 链接 @ [Google PageSpeed](https://developers.google.com/speed/pagesp
 #### Part 2: 优化 pizza.html 的帧速
 1. 优化 `updatepositions` 方法以达到 滚动时保持 60 fps
 2. 优化 `changePizzaSizes` 方法以达到 滑块跳转 pizza 大小的实际小于 5ms
+3. (new) 优化 `main.js` 中的 `querySelector` 性能，用性能更高的 `getElementById` 替换 `querySelector`, 用 `getElementsByClassName` 替换 `querySelectorAll`
+4. (new) 优化 `main.js` 中 for 循环中的变量，在 for 循环外声明变量，节省内存空间
+5. (new) 优化 `DOMContentLoaded` 中生成 pizza 个数的算法，根据 viewport 动态生成 pizza
